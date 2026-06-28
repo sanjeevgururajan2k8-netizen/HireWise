@@ -1,0 +1,17 @@
+# Artifacts Directory
+
+This directory contains generated outputs from the ranking pipeline.
+
+## Contents (auto-generated)
+
+- `submission.csv` — Final top-100 submission CSV
+- `full_score_breakdown.csv` — All feature scores for top candidates
+- `validation_report.json` — Schema validation results
+- `suspicious_profiles.csv` — Medium/high-risk integrity profiles
+- `embeddings.npy` — Optional precomputed candidate embeddings (float16)
+- `embedding_ids.json` — Candidate ID order for embeddings
+
+## Notes
+
+- All files in this directory are gitignored except `.gitkeep`
+- Re-run `rank.py` or use the Streamlit "Run Ranking" page to regenerate

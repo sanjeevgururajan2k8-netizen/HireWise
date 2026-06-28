@@ -1,0 +1,63 @@
+team_name: "hirewise-ai"
+
+primary_contact:
+  name: "Your Full Name"
+  email: "your@email.com"
+  phone: "+91-XXXXXXXXXX"
+
+team_members:
+  - name: "Member 1 Full Name"
+    email: "member1@email.com"
+    role: "ML Engineer"
+
+github_repo: "https://github.com/YOUR_USERNAME/hirewise-ai"
+sandbox_link: "https://huggingface.co/spaces/YOUR_USERNAME/hirewise-ai"
+reproduce_command: "python rank.py --candidates ./candidates.jsonl --job ./job_description.docx --out ./submission.csv"
+
+compute:
+  platform: "Local PC"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.11"
+  os: "Windows 11"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+
+ai_tools_used:
+  - "Antigravity IDE (Google DeepMind)"
+
+ai_usage_summary: |
+  AI coding assistant (Antigravity IDE) used to generate project scaffolding and code.
+  No candidate data was fed to any LLM.
+  No hosted AI APIs are used during ranking.
+  All ranking logic is explainable, rule-based, and runs on CPU without network access.
+
+methodology_summary: |
+  Hybrid explainable ranker combining TF-IDF cosine similarity (40%) with
+  evidence-based feature scoring (60%) across 11 named dimensions:
+  retrieval_production, vector_search, ranking_evaluation, python_engineering,
+  ml_production, product_shipping, startup_ownership, llm_finetuning,
+  learning_to_rank, nlp_ir_relevance, experience_fit.
+  
+  Production action verbs (built, deployed, shipped, etc.) required to score
+  high on evidence features — skills list alone insufficient.
+  
+  Behavioural modifier from Redrob signals capped at [0.75, 1.10] so engagement
+  cannot override technical suitability.
+  
+  Ten explicit integrity checks for honeypot detection: date contradictions,
+  skill duration impossibilities, title/career mismatches, templated summaries.
+  
+  Synonym map covers FAISS/Milvus/Qdrant → vector database; Elasticsearch/
+  OpenSearch → hybrid search; NDCG/MRR → ranking evaluation, etc.
+  
+  Streaming JSONL.GZ support. CPU-only. No network during ranking. Deterministic.
+
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true

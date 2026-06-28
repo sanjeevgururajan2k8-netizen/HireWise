@@ -1,0 +1,54 @@
+# HireWise AI — .gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+._*
+Thumbs.db
+
+# Streamlit
+.streamlit/
+
+# Data (do not commit large files)
+Challenge_data/Raw/candidates.jsonl
+Challenge_data/Raw/candidates.jsonl.gz
+
+# Generated artifacts (keep .gitkeep, not actual outputs)
+Artifacts/*.csv
+Artifacts/*.json
+Artifacts/*.npy
+Artifacts/*.txt
+!Artifacts/.gitkeep
+
+# Logs
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Secrets
+.env
+*.pem
+*.key
+secrets.yaml
