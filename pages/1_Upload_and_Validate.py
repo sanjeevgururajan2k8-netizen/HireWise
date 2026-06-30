@@ -40,8 +40,8 @@ st.markdown("""
 
 st.markdown("""
 <div class="page-header header-upload">
-    <p class="page-title">📁 Upload & Validate</p>
-    <p class="page-sub">Upload candidate data and job description · Validate schema · Preview records</p>
+    <div class="page-title">📁 Upload & Validate</div>
+    <div class="page-sub">Upload candidate data and job description · Validate schema · Preview records</div>
 </div>
 """, unsafe_allow_html=True)
 

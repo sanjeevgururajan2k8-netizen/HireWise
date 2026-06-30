@@ -39,8 +39,8 @@ apply_theme()
 # ---------------------------------------------------------------------------
 st.markdown("""
 <div class="hero-container">
-    <p class="hero-title">🧠 HireWise AI</p>
-    <p class="hero-subtitle">Intelligent Candidate Discovery & Ranking — Redrob Hackathon Submission</p>
+    <div class="hero-title">🧠 HireWise AI</div>
+    <div class="hero-subtitle">Intelligent Candidate Discovery & Ranking — Redrob Hackathon Submission</div>
     <span class="hero-badge">⚡ CPU-Only · No External APIs · Explainable AI · 100K Candidates</span>
 </div>
 """, unsafe_allow_html=True)

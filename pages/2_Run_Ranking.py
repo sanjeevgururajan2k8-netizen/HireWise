@@ -44,8 +44,8 @@ st.markdown("""
 
 st.markdown("""
 <div class="page-header header-ranking">
-    <p class="page-title">▶ Run Ranking Pipeline</p>
-    <p class="page-sub">Execute all 8 ranking stages · Real-time progress · No fake delays</p>
+    <div class="page-title">▶ Run Ranking Pipeline</div>
+    <div class="page-sub">Execute all 8 ranking stages · Real-time progress · No fake delays</div>
 </div>
 """, unsafe_allow_html=True)
 

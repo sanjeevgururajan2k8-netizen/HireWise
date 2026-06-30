@@ -21,8 +21,8 @@ apply_theme()
 
 st.markdown("""
 <div class="page-header header-rankings">
-    <p class="page-title">🏆 Candidate Rankings</p>
-    <p class="page-sub">Filter · Sort · Explore the top-ranked candidates</p>
+    <div class="page-title">🏆 Candidate Rankings</div>
+    <div class="page-sub">Filter · Sort · Explore the top-ranked candidates</div>
 </div>
 """, unsafe_allow_html=True)
 

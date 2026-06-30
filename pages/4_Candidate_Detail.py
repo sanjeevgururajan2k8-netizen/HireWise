@@ -76,8 +76,8 @@ rank_num = rank_by_id.get(selected_id, "?")
 # Header
 st.markdown(f"""
 <div class="page-header header-detail">
-    <p class="page-title">👤 {profile.get('anonymized_name', selected_id)}</p>
-    <p class="page-sub">Rank #{rank_num} · {profile.get('current_title', '')} · {profile.get('location', '')} · Score: {cs.final_score:.4f}</p>
+    <div class="page-title">👤 {profile.get('anonymized_name', selected_id)}</div>
+    <div class="page-sub">Rank #{rank_num} · {profile.get('current_title', '')} · {profile.get('location', '')} · Score: {cs.final_score:.4f}</div>
 </div>
 """, unsafe_allow_html=True)
 

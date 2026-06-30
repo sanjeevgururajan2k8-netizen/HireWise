@@ -334,15 +334,18 @@ def apply_theme() -> None:
             color: white !important;
             margin-bottom: 24px;
         }
+        [data-testid="stMarkdownContainer"] .page-header *,
         .page-header * {
             color: white !important;
         }
+        [data-testid="stMarkdownContainer"] .page-title,
         .page-title {
             font-size: 1.8rem;
             font-weight: 800;
             margin: 0;
             color: white !important;
         }
+        [data-testid="stMarkdownContainer"] .page-sub,
         .page-sub {
             margin-top: 4px;
             font-size: 0.95rem;
@@ -404,9 +407,10 @@ def apply_theme() -> None:
             -webkit-background-clip: text !important;
             -webkit-text-fill-color: transparent !important;
         }
-        .hero-subtitle {
+        [data-testid="stMarkdownContainer"] .hero-subtitle,
+        .hero-container .hero-subtitle {
             font-size: 1.1rem !important;
-            color: #cbd5e1 !important;
+            color: #ffffff !important;
             margin-top: 8px !important;
         }
         .hero-badge {

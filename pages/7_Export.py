@@ -23,8 +23,8 @@ apply_theme()
 
 st.markdown("""
 <div class="page-header header-export">
-    <p class="page-title">⬇ Export & Download</p>
-    <p class="page-sub">Download submission CSV · Score breakdown · Validation reports · Metadata template</p>
+    <div class="page-title">⬇ Export & Download</div>
+    <div class="page-sub">Download submission CSV · Score breakdown · Validation reports · Metadata template</div>
 </div>
 """, unsafe_allow_html=True)
 

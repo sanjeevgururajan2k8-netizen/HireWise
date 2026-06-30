@@ -26,8 +26,8 @@ st.markdown("""
 
 st.markdown("""
 <div class="page-header header-methodology">
-    <p class="page-title">📖 Methodology</p>
-    <p class="page-sub">How HireWise AI ranks candidates — design decisions, fairness, and limitations</p>
+    <div class="page-title">📖 Methodology</div>
+    <div class="page-sub">How HireWise AI ranks candidates — design decisions, fairness, and limitations</div>
 </div>
 """, unsafe_allow_html=True)
 

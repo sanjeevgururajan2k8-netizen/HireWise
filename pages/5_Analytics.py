@@ -23,8 +23,8 @@ apply_theme()
 
 st.markdown("""
 <div class="page-header header-analytics">
-    <p class="page-title">📊 Analytics Dashboard</p>
-    <p class="page-sub">Score distributions · Skill analysis · Location map · Integrity insights</p>
+    <div class="page-title">📊 Analytics Dashboard</div>
+    <div class="page-sub">Score distributions · Skill analysis · Location map · Integrity insights</div>
 </div>
 """, unsafe_allow_html=True)
 
