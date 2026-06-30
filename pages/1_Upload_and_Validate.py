@@ -32,22 +32,14 @@ logger = get_logger("hirewise.pages.upload")
 # ---------------------------------------------------------------------------
 st.markdown("""
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
-[data-testid="stSidebar"] { background: linear-gradient(180deg, #0f172a, #1e3a5f); color: #f1f5f9; }
-[data-testid="stSidebar"] * { color: #f1f5f9 !important; }
-.page-header { background: linear-gradient(135deg, #1e3a5f, #2563eb); border-radius:12px; padding:28px 36px; color:white; margin-bottom:24px; }
-.page-title { font-size:1.8rem; font-weight:800; margin:0; }
-.page-sub { color:#cbd5e1; margin-top:4px; font-size:0.95rem; }
-.info-card { background:white; border-radius:10px; padding:20px; border:1px solid #e2e8f0; box-shadow:0 1px 3px rgba(0,0,0,0.06); margin:8px 0; }
-.error-item { color:#dc2626; font-size:0.85rem; }
-.warn-item { color:#d97706; font-size:0.85rem; }
-.success-item { color:#16a34a; font-size:0.85rem; }
+.error-item { color:#dc2626; font-size:0.85rem; font-weight: 600; }
+.warn-item { color:#d97706; font-size:0.85rem; font-weight: 600; }
+.success-item { color:#16a34a; font-size:0.85rem; font-weight: 600; }
 </style>
 """, unsafe_allow_html=True)
 
 st.markdown("""
-<div class="page-header">
+<div class="page-header header-upload">
     <p class="page-title">📁 Upload & Validate</p>
     <p class="page-sub">Upload candidate data and job description · Validate schema · Preview records</p>
 </div>

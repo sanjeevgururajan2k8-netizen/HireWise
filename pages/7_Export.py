@@ -22,23 +22,9 @@ from src.theme import apply_theme
 apply_theme()
 
 st.markdown("""
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
-[data-testid="stSidebar"] { background: linear-gradient(180deg, #0f172a, #1e3a5f); color: #f1f5f9; }
-[data-testid="stSidebar"] * { color: #f1f5f9 !important; }
-.page-header { background: linear-gradient(135deg, #1a3a4a, #065f46); border-radius:12px; padding:28px 36px; color:white; margin-bottom:24px; }
-.page-title { font-size:1.8rem; font-weight:800; margin:0; }
-.download-card { background:white; border-radius:10px; padding:20px; border:1px solid #e2e8f0; box-shadow:0 1px 4px rgba(0,0,0,0.06); margin:8px 0; }
-.download-title { font-weight:700; font-size:1rem; color:#0f172a; }
-.download-desc { color:#64748b; font-size:0.88rem; margin-top:4px; }
-</style>
-""", unsafe_allow_html=True)
-
-st.markdown("""
-<div class="page-header">
+<div class="page-header header-export">
     <p class="page-title">⬇ Export & Download</p>
-    <p style="color:#a7f3d0; margin-top:4px;">Download submission CSV · Score breakdown · Validation reports · Metadata template</p>
+    <p class="page-sub">Download submission CSV · Score breakdown · Validation reports · Metadata template</p>
 </div>
 """, unsafe_allow_html=True)
 

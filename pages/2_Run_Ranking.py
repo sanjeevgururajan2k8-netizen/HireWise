@@ -36,22 +36,16 @@ logger = get_logger("hirewise.pages.ranking")
 
 st.markdown("""
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
-[data-testid="stSidebar"] { background: linear-gradient(180deg, #0f172a, #1e3a5f); color: #f1f5f9; }
-[data-testid="stSidebar"] * { color: #f1f5f9 !important; }
-.page-header { background: linear-gradient(135deg, #064e3b, #065f46); border-radius:12px; padding:28px 36px; color:white; margin-bottom:24px; }
-.page-title { font-size:1.8rem; font-weight:800; margin:0; }
-.stage-done { color:#16a34a; font-weight:600; }
-.stage-running { color:#2563eb; font-weight:600; }
-.stage-pending { color:#94a3b8; }
+.stage-done { color:#10b981; font-weight:700; }
+.stage-running { color:#3b82f6; font-weight:700; }
+.stage-pending { color:#94a3b8; font-weight:500; }
 </style>
 """, unsafe_allow_html=True)
 
 st.markdown("""
-<div class="page-header">
+<div class="page-header header-ranking">
     <p class="page-title">▶ Run Ranking Pipeline</p>
-    <p style="color:#a7f3d0; margin-top:4px;">Execute all 8 ranking stages · Real-time progress · No fake delays</p>
+    <p class="page-sub">Execute all 8 ranking stages · Real-time progress · No fake delays</p>
 </div>
 """, unsafe_allow_html=True)
 

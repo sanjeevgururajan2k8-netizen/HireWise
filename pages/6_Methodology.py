@@ -20,21 +20,14 @@ apply_theme()
 
 st.markdown("""
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
-[data-testid="stSidebar"] { background: linear-gradient(180deg, #0f172a, #1e3a5f); color: #f1f5f9; }
-[data-testid="stSidebar"] * { color: #f1f5f9 !important; }
-.page-header { background: linear-gradient(135deg, #1a1a2e, #16213e); border-radius:12px; padding:28px 36px; color:white; margin-bottom:24px; }
-.page-title { font-size:1.8rem; font-weight:800; margin:0; }
-.method-card { background:#f8fafc; border-left:4px solid #3b82f6; border-radius:8px; padding:16px 20px; margin:8px 0; }
 .formula-block { background:#0f172a; color:#e2e8f0; border-radius:8px; padding:16px; font-family:monospace; font-size:0.88rem; margin:12px 0; }
 </style>
 """, unsafe_allow_html=True)
 
 st.markdown("""
-<div class="page-header">
+<div class="page-header header-methodology">
     <p class="page-title">📖 Methodology</p>
-    <p style="color:#cbd5e1; margin-top:4px;">How HireWise AI ranks candidates — design decisions, fairness, and limitations</p>
+    <p class="page-sub">How HireWise AI ranks candidates — design decisions, fairness, and limitations</p>
 </div>
 """, unsafe_allow_html=True)
 

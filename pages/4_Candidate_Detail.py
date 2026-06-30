@@ -20,23 +20,8 @@ st.set_page_config(page_title="Candidate Detail — HireWise AI", page_icon="�
 from src.theme import apply_theme
 apply_theme()
 
-st.markdown("""
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
-[data-testid="stSidebar"] { background: linear-gradient(180deg, #0f172a, #1e3a5f); color: #f1f5f9; }
-[data-testid="stSidebar"] * { color: #f1f5f9 !important; }
-.page-header { background: linear-gradient(135deg, #1e3a5f, #0f766e); border-radius:12px; padding:28px 36px; color:white; margin-bottom:24px; }
-.page-title { font-size:1.8rem; font-weight:800; margin:0; }
-.section-card { background:white; border-radius:10px; padding:20px; border:1px solid #e2e8f0; box-shadow:0 1px 3px rgba(0,0,0,0.06); margin:8px 0; }
-.timeline-entry { border-left:3px solid #3b82f6; padding:8px 16px; margin:8px 0; background:#f8fafc; border-radius:0 8px 8px 0; }
-.flag-item { background:#fef2f2; border:1px solid #fecaca; border-radius:6px; padding:8px 12px; margin:4px 0; color:#991b1b; font-size:0.85rem; }
-.skill-expert { background:#ecfdf5; color:#065f46; }
-.skill-advanced { background:#eff6ff; color:#1e40af; }
-.skill-intermediate { background:#fffbeb; color:#92400e; }
-.skill-beginner { background:#f9fafb; color:#374151; }
-</style>
-""", unsafe_allow_html=True)
+# Theme styling is applied globally via apply_theme() above
+
 
 # ---------------------------------------------------------------------------
 # Data availability check
@@ -90,9 +75,9 @@ rank_num = rank_by_id.get(selected_id, "?")
 
 # Header
 st.markdown(f"""
-<div class="page-header">
+<div class="page-header header-detail">
     <p class="page-title">👤 {profile.get('anonymized_name', selected_id)}</p>
-    <p style="color:#a5f3fc; margin-top:4px;">Rank #{rank_num} · {profile.get('current_title', '')} · {profile.get('location', '')} · Score: {cs.final_score:.4f}</p>
+    <p class="page-sub">Rank #{rank_num} · {profile.get('current_title', '')} · {profile.get('location', '')} · Score: {cs.final_score:.4f}</p>
 </div>
 """, unsafe_allow_html=True)
 
